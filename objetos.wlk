@@ -22,6 +22,12 @@ object pardo {
   } 
 }
 
+object naranja {
+  method esFuerte(){
+    return true
+  } 
+}
+
 object cobre {
   method esBrillante() {
     return true
@@ -138,5 +144,60 @@ object placa {
 
   method material() {
     return cobre
+  }
+
+}
+
+object arito {
+    method color() {
+    return celeste
+  }
+
+  method peso() {
+    return 180
+  }
+
+  method material() {
+    return cobre
+  }
+}
+
+object banquito {
+  var color = naranja
+
+  method material(){
+    return madera
+  }
+
+  method peso(){
+    return 1700
+  }
+
+  method cambiarColor(unColor) {
+    color = unColor
+  }
+}
+
+object cajita {
+  var objetoDentro = pelota
+
+  method color() {
+    return rojo
+  }
+
+  method material() {
+    return cobre
+  }
+
+  method objeto() {
+    return objetoDentro
+  }
+
+  method cambiarObjeto(objetoX) {
+    objetoDentro = objetoX
+  }
+
+  method peso() {
+    return objetoDentro.peso() + 400
   }
 }
